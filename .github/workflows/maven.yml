@@ -21,4 +21,4 @@ jobs:
         # Artifact name
         name: dummy-app
         # Directory containing files to upload
-        path: /bin/release/
+        path: complete/target
