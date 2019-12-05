@@ -26,4 +26,5 @@ jobs:
       uses: azure/webapps-deploy@v1
       with: 
         app-name: vt-demo
+        package: complete/target/*.war
         publish-profile: ${{ secrets.azurePublishProfile }}
