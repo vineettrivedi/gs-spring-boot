@@ -19,7 +19,7 @@ jobs:
       uses: actions/upload-artifact@v1.0.0
       with:
         # Artifact name
-        name: dummy-app
+        name: vt-demo
         # Directory containing files to upload
         path: complete/target
     - name: 'Run Azure webapp deploy action using publish profile credential'
