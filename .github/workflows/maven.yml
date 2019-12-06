@@ -27,7 +27,7 @@ jobs:
         name: vt-demo-2
         # Directory containing files to upload
         path: complete/target
-    - name: 'Run Azure webapp deploy action using publish profile credential'
+    - name: 'Run Azure webapp deploy action using publish profile'
       uses: azure/webapps-deploy@v1
       with: 
         app-name: vt-demo-2
