@@ -13,6 +13,11 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: Cache maven modules
+      uses: actions/cache@v1
+      with:
+        path: test
+        key: ${{ runner.OS }}-build-cache-key
     - name: Build with Maven
       run: mvn clean install --file complete/pom.xml
     - name: Upload artifact
